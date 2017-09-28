@@ -1,3 +1,12 @@
+/* ADRIANO TENORIO        RA.: 154468 */
+
+/* Scheduler
+ *
+ * Este programa recebe a periodicidade de cada uma das 5 tarefas
+ * e a quantidade de interações a serem simuladas. Imprime quais
+ * tarefas foram executadas em cada tempo. Se nenhuma atividade 
+ * for executada, imprimimos um "-".
+ */
 #include <stdio.h>
 
 int main() {
@@ -12,7 +21,7 @@ int main() {
 
     int flag = 0;
     
-    if( i%(a[0]) == 0){
+    if( i%(a[0]) == 0){ //analise individual de execução de cada tarefa
         printf("0");
         flag = 1;
     }
@@ -33,7 +42,7 @@ int main() {
         flag = 1;
     }
 
-    if( flag == 0){
+    if( flag == 0){ //condição que analisa se nenhuma tarefa foi executada
         printf("-");
     }
     
@@ -42,5 +51,3 @@ int main() {
 
   return 0;
 }
-
-
